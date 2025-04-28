@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-white: #ffffff;
+  --color-primary: #541cae;
+  --color-secondary: #96909c;
+}
+
+@utilities {
+  .text-primary {
+    color: var(--primary);
+  }
+
+  .text-secondary {
+    color: var(--secondary);
+  }
+
+  .text-white {
+    color: var(--white);
+  }
+
+  .bg-primary {
+    background-color: var(--primary);
+  }
+
+  .bg-white {
+    background-color: var(--white);
+  }
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+p {
+  color: var(--secondary);
+}
+
+a button {
+  color: var(--secondary);
+}
