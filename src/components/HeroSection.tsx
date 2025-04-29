@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import { CircleCardsBackground } from './CircleCardsBackground';
+import { BlurDotsCluster } from './BlurDotsCluster';
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[757px] bg-[url('/section-bg.webp')] bg-cover bg-top bg-no-repeat pb-[193px] pt-[141px]">
+    <section className="relative z-10 min-h-[757px] bg-[url('/section-bg.webp')] bg-cover bg-top bg-no-repeat pb-[193px] pt-[141px]">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-2.5">
         <div className="flex flex-col">
           <h1 className="mb-[50px] text-[56px] font-bold leading-none text-white [text-shadow:0px_2px_2px_rgba(64,47,255,0.3)]">
@@ -30,6 +31,7 @@ export default function HeroSection() {
           className="relative z-20"
         />
       </CircleCardsBackground>
+      <BlurDotsCluster />
     </section>
   );
 }
