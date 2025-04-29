@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
-import Header from "./components/Header";
+import { Link } from 'react-router-dom';
+import Header from './components/Header';
 
 function App() {
   return (
     <>
       <Header />
       <main>
-        <section className="bg-[url('/section-bg.webp')] bg-top bg-contain bg-no-repeat">
+        <section className="bg-[url('/section-bg.webp')] bg-cover bg-top bg-no-repeat">
           <h1>Come to our house and get revenue share up to 50% for life</h1>
           <p>Individual approach and generous offers for each affiliate</p>
           <Link to="#">Sign up</Link>

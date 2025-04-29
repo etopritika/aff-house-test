@@ -19,7 +19,7 @@ const navLinks = [
 export default function Header() {
   const commonStyles = 'text-base leading-none font-medium';
   return (
-    <header className="bg-[url('/header-bg.webp')] bg-cover bg-center bg-no-repeat pb-[45px] pt-10">
+    <header className="bg-[url('/header-bg.webp')] bg-cover bg-top bg-no-repeat pb-[45px] pt-10">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-2.5">
         <Link
           className="font-secondary text-[36px] font-black uppercase italic leading-none text-primary"
