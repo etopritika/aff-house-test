@@ -27,7 +27,7 @@ export default function Header() {
         >
           <span className="inline-block skew-x-[-10deg] bg-gradient-to-br from-[#9F24FF] to-[#541CAE] py-1 pl-2 pr-3.5">
             <span className="block skew-x-[10deg] text-[#72EBF9]">aff</span>
-          </span>
+          </span>{' '}
           house
         </Link>
         <nav>
