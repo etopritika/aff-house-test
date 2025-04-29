@@ -31,7 +31,7 @@ export default function Header() {
           house
         </Link>
         <nav>
-          <ul className="flex gap-[30px]">
+          <ul className="flex items-center gap-[30px]">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <Link className={commonStyles} to={link.to}>
