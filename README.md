@@ -1,54 +1,68 @@
-# React + TypeScript + Vite
+# AffHouse Promo Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a promotional landing page for the **AffHouse** project, built with **React**, **TypeScript**, **Vite**, and **TailwindCSS**.
 
-Currently, two official plugins are available:
+## 🔧 Technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ React + TypeScript
+- ⚡ Vite
+- 💨 TailwindCSS
+- 🎨 Parallax effects using `react-scroll-parallax`
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+src/
+├── components/
+│   ├── FeaturesSection/
+│   │   ├── index.tsx               # Main features section component
+│   │   ├── features-icons.tsx      # SVG icons used in the features
+│   ├── BlurDotsCluster.tsx         # Decorative parallax dots cluster
+│   ├── CircleCardsBackground.tsx   # Cards background with animated dots
+│   ├── Header.tsx                  # Navigation bar
+│   ├── HeroSection.tsx             # Main hero section with layered parallax
+├── lib/
+│   ├── types.ts                    # Shared types
+│   ├── utils.ts                    # Utility functions (e.g. parallax calculation)
+├── App.tsx                         # Root component
+├── main.tsx                        # Application entry point
+├── index.css                       # TailwindCSS styles
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Install dependencies:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
+```
+
+2. Start the development server:
+
+```bash
+npm run dev
+```
+
+## 📦 Build for production
+
+```bash
+npm run build
+```
+
+## ✨ Features
+
+- **Hero Section** features multi-layer parallax (background, cards, and dots).
+- **Features Section** includes reusable icons with colored shadows based on the background.
+- **BlurDotsCluster** displays abstract positioned elements with optional blur and parallax.
+
+## 📦 Packages Used
+
+- [`react-scroll-parallax`](https://www.npmjs.com/package/react-scroll-parallax)
+
+---
+
+🛰 Designed to showcase visual effects and animations in a marketing landing page.
+
+```
+
 ```
