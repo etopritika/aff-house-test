@@ -24,13 +24,7 @@ export default function HeroSection() {
         </div>
       </div>
       <CircleCardsBackground>
-        <img
-          src="/cards.png"
-          alt="cards"
-          width={604}
-          height={498}
-          className="relative z-20"
-        />
+        <img src="/cards.png" alt="cards" width={604} height={498} />
       </CircleCardsBackground>
     </section>
   );
