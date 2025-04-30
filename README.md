@@ -62,7 +62,3 @@ npm run build
 ---
 
 🛰 Designed to showcase visual effects and animations in a marketing landing page.
-
-```
-
-```
