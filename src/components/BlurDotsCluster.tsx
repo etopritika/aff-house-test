@@ -47,7 +47,7 @@ const dots: Dot[] = [
 
 export const BlurDotsCluster: React.FC = () => {
   return (
-    <div className="pointer-events-none absolute bottom-[-20px] left-[153px] z-[-1] h-[656px] w-[836px]">
+    <div className="pointer-events-none absolute left-[-207px] top-[-22px] z-[-1] h-[656px] w-[836px]">
       {dots.map((dot, index) => (
         <div
           key={index}
