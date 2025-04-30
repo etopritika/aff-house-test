@@ -5,7 +5,8 @@ import { BlurDotsCluster } from './BlurDotsCluster';
 export default function HeroSection() {
   return (
     <section className="relative z-10 min-h-[757px] bg-[url('/section-bg.webp')] bg-cover bg-top bg-no-repeat pb-[193px] pt-[141px]">
-      <div className="mx-auto flex max-w-[1200px] items-center justify-between px-2.5">
+      <div className="relative z-10 mx-auto flex max-w-[1200px] items-center justify-between px-2.5">
+        <BlurDotsCluster />
         <div className="flex flex-col">
           <h1 className="mb-[50px] text-[56px] font-bold leading-none text-white [text-shadow:0px_2px_2px_rgba(64,47,255,0.3)]">
             Come to our house <br /> and get revenue share <br /> up to 50% for
@@ -23,15 +24,8 @@ export default function HeroSection() {
         </div>
       </div>
       <CircleCardsBackground>
-        <img
-          src="/cards.png"
-          alt="cards"
-          width={604}
-          height={498}
-          className="relative z-20"
-        />
+        <img src="/cards.png" alt="cards" width={604} height={498} />
       </CircleCardsBackground>
-      <BlurDotsCluster />
     </section>
   );
 }
